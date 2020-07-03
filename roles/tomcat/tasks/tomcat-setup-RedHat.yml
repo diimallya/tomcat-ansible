@@ -70,7 +70,7 @@
 
 - name: Open tomcat port on the firewall
   firewalld:
-    port: "{{ tomcat_port }}/tcp"
+    port: 8080/tcp
     permanent: true
     state: enabled
     immediate: yes
